@@ -1,0 +1,46 @@
+{
+  "name": "gaza-gate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "jest --runInBand --forceExit",
+    "test:order-totals": "jest tests/unit/orderTotals.util.test.js tests/unit/order.totals.services.test.js --runInBand --forceExit",
+    "test:seller-reply": "jest tests/unit/review.sellerReply.test.js tests/unit/dashboard.reviews.test.js tests/unit/publicCustomer.sellerReply.test.js tests/unit/product.reviewPreview.test.js --runInBand --forceExit",
+    "test:updates": "jest tests/unit/orderTotals.util.test.js tests/unit/order.totals.services.test.js tests/unit/review.sellerReply.test.js tests/unit/dashboard.reviews.test.js tests/unit/publicCustomer.sellerReply.test.js tests/unit/product.reviewPreview.test.js --runInBand --forceExit",
+    "test:trusted-seller": "jest tests/unit/sellerStoreLink.util.test.js tests/integration/trustedSeller.e2e.test.js --runInBand --forceExit",
+    "test:trusted-buyer": "jest tests/unit/customerProfileLink.util.test.js tests/integration/trustedBuyer.e2e.test.js --runInBand --forceExit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cloudinary": "^2.10.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.2",
+    "google-auth-library": "^10.7.0",
+    "googleapis": "^173.0.0",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.2.0",
+    "mysql2": "^3.22.4",
+    "nodemailer": "^8.0.11",
+    "nodemon": "^3.1.14",
+    "openai": "^6.45.0",
+    "resend": "^6.14.0",
+    "sequelize": "^6.37.8",
+    "socket.io": "^4.8.3",
+    "uuid-validate": "^0.0.3",
+    "validator": "^13.15.35"
+  },
+  "devDependencies": {
+    "jest": "^30.4.2",
+    "socket.io-client": "^4.8.3",
+    "supertest": "^7.2.2"
+  }
+}
